@@ -5,12 +5,16 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-public class DrawView extends SurfaceView implements SurfaceHolder.Callback {
+import com.example.strongtower.drawBattlefield.DrawBattlefield;
+import com.example.strongtower.drawBattlefield.GameCore;
+
+public class    MainView extends SurfaceView implements SurfaceHolder.Callback {
 
     private DrawBattlefield drawBattlefield;
     private GameCore gameCore;
     public int count_kill;
-    public DrawView(Context context) {
+
+    public MainView(Context context) {
         super(context);
         getHolder().addCallback(this);
     }
@@ -50,15 +54,3 @@ public class DrawView extends SurfaceView implements SurfaceHolder.Callback {
         return false;
     }
 }
-
-//        try {
-//                for (Enemy enemy : GameCore.enemies) {
-//                if (enemy.enemyXCoordinate <= (int) drawBattlefield.arrow_x && enemy.enemyXCoordinate + enemy.enemyWidth >= (int) drawBattlefield.arrow_x) {
-//                System.out.println("Есть пробитие");
-//                count_kill ++;
-//                GameCore.enemies.remove(enemy);
-//                }
-//                }
-//                } catch (Exception e) {
-
-//                }

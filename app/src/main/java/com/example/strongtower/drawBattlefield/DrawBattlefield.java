@@ -6,10 +6,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.view.SurfaceHolder;
 
-import com.example.strongtower.MainActivity;
 import com.example.strongtower.R;
 
 public class DrawBattlefield extends Thread {
